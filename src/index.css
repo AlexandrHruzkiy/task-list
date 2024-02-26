@@ -1,0 +1,62 @@
+@import "materialize-css/dist/css/materialize.min.css";
+body{
+  margin:0;
+  padding: 0;
+  background-color: rgb(217, 226, 233);
+}
+span{
+  color: rgb(177, 142, 158);  
+}
+.todo{
+  margin-bottom: 1.5rem;
+
+}
+.todo.status span{
+  text-decoration: line-through;
+}
+.todo i{
+  z-index: 2;
+}
+.todo label button {
+  background-color: rgb(126, 112, 180);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+@media(hover:hover){
+  .todo label button:hover {
+    background-color: rgb(110, 132, 140);
+  }
+  .todo label button.delete-button:hover{
+    background-color: brown;
+  }
+}
+@media (hover: none) {
+  .todo label button:active {
+    background-color: rgb(110, 132, 140);
+  }
+  .todo label button.delete-button:hover{
+    background-color: brown;
+  }
+}
+
+.todo label button.edit-button {
+  margin-left: auto;
+}
+.todo label {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
+  justify-content: space-between;
+  cursor: pointer;
+  background: rgb(202, 211, 217);
+  padding: 1rem;
+}
+
+.todo label button.delete-button {
+  margin-right: 0.5rem;
+}
+
